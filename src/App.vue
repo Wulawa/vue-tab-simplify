@@ -1,21 +1,34 @@
 <template>
   <div id="app">
+    <WTabs @on-index-change='tabIndexChange'>
+      <WTabItem @on-item-click="onItemClick">首页</WTabItem>
+      <WTabItem @on-item-click="onItemClick" :selected='true'>详情</WTabItem>
+      <WTabItem @on-item-click="onItemClick">关于我们</WTabItem>
+      <WTabItem @on-item-click="onItemClick">其他</WTabItem>
+      <WTabItem @on-item-click="onItemClick">哔哩哔哩</WTabItem>
+    </WTabs> 
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import {WTabs, WTabItem} from '../libs';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    WTabs, WTabItem
+  },
+  methods: {
+    onItemClick(item) {
+      console.log(item);
+    },
+    tabIndexChange(newVal, oldVal) {
+      console.log(newVal, oldVal);
+    }
   }
 }
 </script>
-
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
