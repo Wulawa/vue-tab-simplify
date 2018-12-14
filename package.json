@@ -1,7 +1,6 @@
 {
   "name": "vue-tab-simplify",
   "version": "0.1.0",
-  "private": true,
   "main": "./libs/index.js",
   "scripts": {
     "serve": "vue-cli-service serve",

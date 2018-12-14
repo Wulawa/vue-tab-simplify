@@ -28,30 +28,33 @@ import {WTabs, WTabItem} from 'vue-tab-simplify';
 #### 样式及动画效果均可通过css 自行设置
 ## WTabs
   ##### props:
-  
+  | ------- | -------|
   | scrollThreshold | tab数量大于多少时启用滚动模式，启用时会自动定位，如不需要不要设置会造成不必要的计算 |
   | lineStyle | 选中线的样式 |
 
 
   ##### event:
-
+  
+  | ------- | -------|
   | on-index-change | 选中值改变后回调 |
   | on-before-index-change | 选中值改变前的回调 |
 
 ##WTabItem
   ##### props
-
+  
+  | ------- | -------|
   | activeClass | 选中item的类名  |
   | disabled | 禁止操作 |
 
   ##### event:
-
+  
+  | ------- | -------|
   | on-item-click | 点击事件 |
 
 # Keywords
   
   Vue tab component
-  
+
 # License
 
   ISC
