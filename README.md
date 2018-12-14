@@ -42,7 +42,7 @@ import {WTabs, WTabItem} from 'vue-tab-simplify';
   | on-index-change | 选中值改变后回调 |
   | on-before-index-change | 选中值改变前的回调 |
 
-##WTabItem
+## WTabItem
   ##### props
   
   | props | description |
