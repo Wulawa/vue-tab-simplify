@@ -29,11 +29,7 @@ import {WTabs, WTabItem} from 'vue-tab-simplify';
 ## WTabs
   ##### props:
   
-  | 一个普通标题 | 一个普通标题 | 一个普通标题 |
-  | ------ | ------ | ------ |
-  | 短文本 | 中等文本 | 稍微长一点的文本 |
-  | 稍微长一点的文本 | 短文本 | 中等文本 |
-  
+  | props | description |
   | ------- | -------|
   | scrollThreshold | tab数量大于多少时启用滚动模式，启用时会自动定位，如不需要不要设置会造成不必要的计算 |
   | lineStyle | 选中线的样式 |
@@ -41,6 +37,7 @@ import {WTabs, WTabItem} from 'vue-tab-simplify';
 
   ##### event:
   
+  | props | description |
   | ------- | -------|
   | on-index-change | 选中值改变后回调 |
   | on-before-index-change | 选中值改变前的回调 |
@@ -48,12 +45,14 @@ import {WTabs, WTabItem} from 'vue-tab-simplify';
 ##WTabItem
   ##### props
   
+  | props | description |
   | ------- | -------|
   | activeClass | 选中item的类名  |
   | disabled | 禁止操作 |
 
   ##### event:
   
+  | props | description |
   | ------- | -------|
   | on-item-click | 点击事件 |
 
