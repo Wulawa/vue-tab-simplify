@@ -3,10 +3,10 @@
   padding: 0 5px;
   color: #9098a8;
 }
-.w-tab-selected{
-  color: #2b313c;
+.w_tab_selected{
+  color: #1191ff;
 }
-.w-tab-disabled{
+.w_tab_disabled{
   color: #9ea2a9;
   pointer-events: none;
 }
@@ -14,8 +14,8 @@
 <template>
   <div
   :class="['w_tab_item', currentSelected ? activeClass : '', {
-    'w-tab-selected': currentSelected,
-    'w-tab-disabled': disabled 
+    'w_tab_selected': currentSelected,
+    'w_tab_disabled': disabled 
   }]"
   @click="onItemClick"
   >

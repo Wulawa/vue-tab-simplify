@@ -6,14 +6,14 @@
   position: relative;
   white-space: nowrap;
 }
-.tab-ink-bar{
+.tab_ink_bar{
   position: absolute;
   left: 0;
   bottom: 0;
 }
 .ink_inner{
   height: 3px;
-  background: linear-gradient(to right, #f67373, #fe9874);
+  background-color: #1191ff;
   border-radius: 3px;
   width: 20px;
   margin: 0 auto;
@@ -32,7 +32,7 @@
 <template>
   <div :class="['w_tabs', {scrollable}]">
     <slot></slot>
-    <div class="tab-ink-bar" :style="inkStyle">
+    <div class="tab_ink_bar" :style="inkStyle">
       <div class="ink_inner" :style='lineStyle'></div>
     </div>
   </div>
