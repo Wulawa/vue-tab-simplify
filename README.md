@@ -4,16 +4,26 @@ vue tab组件
 
 > 试了很多tab组件限制都比较大，而且很多无用功能, 此组件只负责基本逻辑，值的双向绑定及相关动画，具体样式自行设置，可操作空间比较大
 
-
+安装： 
+```
+yarn add vue-tab-simplify
+//or
+npm install vue-tab-simplify
+```
 使用方法：
 
 ```javascript
+全局加载
 import tab from 'vue-tab-simplify';
 Vue.use(tab);
 
 // or
-
+按需引入
 import {WTabs, WTabItem} from 'vue-tab-simplify';
+
+components: {
+  WTabs, WTabItem
+}
 ```
 
 ```html
